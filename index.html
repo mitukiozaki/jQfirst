@@ -1,0 +1,99 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery part.1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22243b47d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>募集職種</h1>
+    </div>
+    <div class="main_content">
+        <div class="part1">
+            <div class="worksCategory">1.Webディレクター</div>
+            <div class="worksContent">
+                <dl>
+                    <dt>仕事内容</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>応募資格</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>必須スキル</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>給与</dt>
+                    <dd>xxx万~xxx万円（スキル・経験・実績により優遇）</dd>
+                    <dt>休日・休暇</dt>
+                    <dd>土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇</dd>
+                    <dt>雇用形態</dt>
+                    <dd>正社員（試用期間3ヶ月）<br>業務委託</dd>
+                    <dt>勤務時間</dt>
+                    <dd>フレックスタイム</dd>
+                    <dt>勤務地</dt>
+                    <dd>東京</dd>
+                </dl>
+            </div>
+    
+        </div>
+        <div class="part2">
+            <div class="worksCategory">2.Webデザイナー</div>
+            <div class="worksContent">
+                <dl>
+                    <dt>仕事内容</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>応募資格</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>必須スキル</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>給与</dt>
+                    <dd>xxx万~xxx万円（スキル・経験・実績により優遇）</dd>
+                    <dt>休日・休暇</dt>
+                    <dd>土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇</dd>
+                    <dt>雇用形態</dt>
+                    <dd>正社員（試用期間3ヶ月）<br>業務委託</dd>
+                    <dt>勤務時間</dt>
+                    <dd>フレックスタイム</dd>
+                    <dt>勤務地</dt>
+                    <dd>東京</dd>
+                </dl>
+            </div>
+    
+        </div>
+        <div class="part3">
+            <div class="worksCategory" id="target">3.プログラマー</i></div>
+            <div class="worksContent">
+                <dl>
+                    <dt>仕事内容</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>応募資格</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>必須スキル</dt>
+                    <dd>テキストテキストテキストテキスト</dd>
+                    <dt>給与</dt>
+                    <dd>xxx万~xxx万円（スキル・経験・実績により優遇）</dd>
+                    <dt>休日・休暇</dt>
+                    <dd>土日祝祭日、有給休暇、夏季休暇、年末年始休暇、産前産後休暇、育児休暇</dd>
+                    <dt>雇用形態</dt>
+                    <dd>正社員（試用期間3ヶ月）<br>業務委託</dd>
+                    <dt>勤務時間</dt>
+                    <dd>フレックスタイム</dd>
+                    <dt>勤務地</dt>
+                    <dd>東京</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="last"></div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script>$(function(){
+            $(".worksCategory").on("click",function(){
+                $(this).next().slideToggle();
+                $(this).toggleClass("open");
+            });
+        });</script>
+</body>
+</html>

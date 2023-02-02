@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+li{
+  list-style: none;
+}
+
+/* -----------------cssreset-------------------------- */
+
+body{
+  max-width: 920px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 1000px;
+}
+
+.title{
+  margin-top: 105px;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+
+.worksCategory{
+  border-top: 1px solid black;
+  font-size :18px;
+  padding: 40px 30;
+  font-weight: 900;
+}
+
+.worksCategory span{
+  float: right;
+}
+
+.worksCategory:hover , :active{
+  background-color: #FFDA5F;
+}
+
+.worksContent{
+  display: none;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.worksContent dt{
+  font-weight: 900;
+  width: 20%;
+  margin-bottom: 40px;
+}
+
+.worksContent dd{
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.worksContent dl{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+}
+
+
+.last{
+  height: 100px;
+}
+
+.part3{
+  border-bottom: 1px solid black;
+}
+
+.worksCategory::after{
+  font-family: "Font Awesome 5 Free";
+  float: right;
+  content: "\2b";
+}
+
+.open::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+}
+
+.open{
+  background-color: #FFDA5F;
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .worksContent dl{
+  }
+
+  .worksContent dt{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .worksContent dd{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-left: 10px;
+  }
+}
